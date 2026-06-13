@@ -492,7 +492,7 @@ func messageDelta(prev, next string) string {
 	if strings.HasPrefix(next, prev) {
 		return next[len(prev):]
 	}
-	return ""
+	return next
 }
 
 func mapToolItem(item codexsdk.ThreadItem, started bool) (types.ToolCall, bool) {
